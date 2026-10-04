@@ -5,20 +5,6 @@ import "./styles.css";
 
 const projects = [
   {
-    name: "SmartSvar Studio",
-    type: "Digital Experience",
-    tag: "Flagship",
-    className: "project-studio",
-    code: "SMARTSVAR",
-    summary: "The studio website as a living demonstration of strategy, design, motion and technology.",
-    challenge: "The studio needed a digital presence that could communicate capability without looking like another agency template.",
-    strategy: "Build the experience itself as the proof. Every layer, from typography to interaction, carries the same point of view.",
-    system: "A modular visual system built around oversized type, spatial layouts, controlled motion and high contrast.",
-    outcome: "A flagship experience designed to make the quality of the work impossible to separate from the brand.",
-    deliverables: "Positioning / UX / Art Direction / Design System / Frontend",
-    principle: "The studio website is not a brochure. It is the first case study."
-  },
-  {
     name: "AURA",
     type: "Aesthetic Clinic",
     tag: "Trust / Conversion",
@@ -93,6 +79,7 @@ const labItems = [
 function App() {
   const cursor = useRef(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [language, setLanguage] = useState("no");
   const [cursorLabel, setCursorLabel] = useState("");
   const [activeApproach, setActiveApproach] = useState(0);
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -102,6 +89,142 @@ function App() {
   const [submitted, setSubmitted] = useState(false);
   const closeTrigger = useRef(null);
   const caseOrigin = useRef(null);
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+    const translations = {
+  "Work": "Arbeid",
+  "Approach": "Metode",
+  "Lab": "Lab",
+  "About": "Om oss",
+  "Start a project": "Start et prosjekt",
+  "DIGITAL EXPERIENCE STUDIO": "DIGITALT DESIGNSTUDIO",
+  "BRAND / UX / CODE": "MERKEVARE / UX / KODE",
+  "OSLO / WORLDWIDE": "OSLO / NORGE",
+  "WE BUILD": "VI BYGGER",
+  "DIGITAL": "DIGITALE",
+  "EXPERIENCES": "OPPLEVELSER",
+  "Websites designed to make ambitious businesses impossible to ignore.": "Nettsider som gjør at ambisiøse bedrifter blir lagt merke til.",
+  "START A PROJECT": "START ET PROSJEKT",
+  "VIEW OUR WORK": "SE VÅRT ARBEID",
+  "SCROLL TO EXPLORE": "RULL FOR Å UTFORSKE",
+  "THE DIGITAL FLAGSHIP": "BEDRIFTENS DIGITALE UTSTILLINGSVINDU",
+  "YOUR WEBSITE": "NETTSIDEN DIN",
+  "IS YOUR DIGITAL FLAGSHIP.": "ER DITT DIGITALE UTSTILLINGSVINDU.",
+  "The place where your brand meets the world. We turn that first impression into an experience people remember, trust and act on.": "Det er her merkevaren din møter verden. Vi gjør førsteinntrykket om til en opplevelse folk husker, stoler på og handler ut fra.",
+  "SELECTED WORK": "UTVALGTE PROSJEKTER",
+  "BUILT TO": "SKAPT FOR Å",
+  "BE REMEMBERED.": "BLI HUSKET.",
+  "Four digital worlds. Four different problems. One standard: make the experience matter.": "Fire digitale konsepter. Fire ulike behov. Én standard: Opplevelsen skal gjøre en forskjell.",
+  "THE DIFFERENCE": "FORSKJELLEN",
+  "BEAUTIFUL": "VAKKERT",
+  "IS THE BASELINE.": "ER BARE STARTEN.",
+  "We build for what happens after the click.": "Vi designer for det som skjer etter klikket.",
+  "CLARITY": "TYDELIGHET",
+  "TRUST": "TILLIT",
+  "DESIRE": "ØNSKE",
+  "ACTION": "HANDLING",
+  "OUR APPROACH": "VÅR METODE",
+  "COMPLEXITY": "KOMPLEKSITET",
+  "UNDERNEATH.": "UNDER OVERFLATEN.",
+  "Simplicity on the surface. Every decision has a reason, every interaction has a job.": "Enkelt på overflaten. Hver beslutning har en grunn, og hver interaksjon har en funksjon.",
+  "DESIGN THAT DOES SOMETHING": "DESIGN SOM SKAPER RESULTATER",
+  "MAKE PEOPLE": "FÅ FOLK TIL Å",
+  "STOP.": "STOPPE OPP.",
+  "Build trust faster": "Bygg tillit raskere",
+  "Generate better leads": "Få bedre kundeemner",
+  "Explain complex offers": "Forklar komplekse tjenester",
+  "Turn attention into action": "Gjør oppmerksomhet til handling",
+  "INTERACTION / 04": "INTERAKSJON / 04",
+  "MOTION / ON": "BEVEGELSE / PÅ",
+  "SYSTEM / ACTIVE": "SYSTEM / AKTIVT",
+  "THE LAB": "LABORATORIET",
+  "WE TEST": "VI UTFORSKER",
+  "WHAT'S NEXT.": "DET NESTE.",
+  "Interactive type. Motion systems. Spatial interfaces. AI experiences. We experiment so the final product can feel inevitable.": "Interaktiv typografi, bevegelse, romlige grensesnitt og AI-opplevelser. Vi eksperimenterer for å skape bedre digitale produkter.",
+  "ABOUT": "OM OSS",
+  "SMALL TEAM.": "LITE TEAM.",
+  "BIG CRAFT.": "HØYT HÅNDVERK.",
+  "Independent digital studio based in Oslo, working with ambitious businesses worldwide. We combine strategy, design and development in one focused team.": "Uavhengig digitalt studio i Oslo som jobber med ambisiøse bedrifter. Vi samler strategi, design og utvikling i ett fokusert team.",
+  "READY TO BUILD": "KLAR FOR Å SKAPE",
+  "SOMETHING UNFORGETTABLE?": "NOE SOM BLIR HUSKET?",
+  "Tell us what you are building, where the current experience falls short and what needs to change.": "Fortell oss hva du vil bygge, hva som ikke fungerer i dag, og hva du ønsker å forbedre.",
+  "Name": "Navn",
+  "Your name": "Ditt navn",
+  "Company": "Bedrift",
+  "Company name": "Bedriftsnavn",
+  "Project type": "Type prosjekt",
+  "New digital experience": "Ny nettside eller digital opplevelse",
+  "Website redesign": "Redesign av nettside",
+  "Digital product": "Digitalt produkt",
+  "Growth and conversion": "Vekst og konvertering",
+  "What are you trying to achieve?": "Hva ønsker du å oppnå?",
+  "A short description of the project": "Beskriv prosjektet kort",
+  "BRIEF READY": "KLAR TIL Å SENDES",
+  "SEND PROJECT BRIEF": "SEND PROSJEKTBESKRIVELSE",
+  "Your email draft is ready. Send it from your email client to continue the conversation.": "E-postutkastet er klart. Send det fra e-postprogrammet ditt for å fortsette dialogen.",
+  "CHALLENGE": "UTFORDRING",
+  "STRATEGY": "STRATEGI",
+  "SYSTEM": "SYSTEM",
+  "OUTCOME": "RESULTAT",
+  "DELIVERABLES": "LEVERANSER",
+  "DESIGN PRINCIPLE": "DESIGNPRINSIPP",
+  "PREVIOUS CASE": "FORRIGE PROSJEKT",
+  "NEXT CASE": "NESTE PROSJEKT",
+  "OPEN FULL EXPERIENCE": "ÅPNE HELE DEMOEN",
+  "CLOSE CASE": "LUKK PROSJEKT",
+  "Go to top": "Til toppen",
+  "Close project": "Lukk prosjekt",
+  "Close menu": "Lukk meny",
+  "Open menu": "Åpne meny",
+  "Flagship": "Hovedprosjekt",
+  "Trust / Conversion": "Tillit / Konvertering",
+  "Atmosphere / Desire": "Atmosfære / Ønske",
+  "Precision / Leads": "Presisjon / Leads",
+  "Taste / Reservations": "Matopplevelse / Reservasjoner",
+  "Aesthetic Clinic": "Estetisk klinikk",
+  "Luxury Hospitality": "Eksklusiv hotell- og restaurantopplevelse",
+  "Architecture / Construction": "Arkitektur / Bygg",
+  "Restaurant / Dining": "Restaurant / Servering",
+  "A premium clinic experience designed around trust, clarity and a frictionless booking journey.": "En premium klinikkopplevelse bygget på tillit, tydelighet og en enkel bestillingsreise.",
+  "Create a calm editorial environment that explains expertise quickly and moves visitors naturally toward consultation.": "Skap et rolig, redaksjonelt uttrykk som forklarer kompetansen og leder besøkende mot konsultasjon.",
+  "A cinematic hospitality identity built to turn atmosphere into desire before a guest ever arrives.": "En filmatisk identitet for gjestfrihet som skaper forventning før gjesten ankommer.",
+  "A structural digital identity for an architecture and construction brand built to communicate precision.": "En strukturert digital identitet for arkitektur og bygg som kommuniserer presisjon.",
+  "A contemporary restaurant experience built around appetite, atmosphere and an effortless table booking journey.": "En moderne restaurantopplevelse bygget rundt matglede, atmosfære og enkel bordbestilling."
+};
+    const translateTree = (root) => {
+      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+      const nodes = [];
+      while (walker.nextNode()) nodes.push(walker.currentNode);
+      for (const node of nodes) {
+        const original = node.nodeValue;
+        const trimmed = original.trim();
+        if (language === "no" && translations[trimmed]) {
+          node.nodeValue = original.replace(trimmed, translations[trimmed]);
+        }
+      }
+      root.querySelectorAll?.("[placeholder], [aria-label]").forEach((el) => {
+        if (language === "no") {
+          if (translations[el.getAttribute("placeholder")]) el.setAttribute("placeholder", translations[el.getAttribute("placeholder")]);
+          if (translations[el.getAttribute("aria-label")]) el.setAttribute("aria-label", translations[el.getAttribute("aria-label")]);
+        }
+      });
+    };
+    translateTree(document.body);
+    const observer = new MutationObserver((mutations) => {
+      if (language !== "no") return;
+      for (const mutation of mutations) {
+        if (mutation.type === "childList") mutation.addedNodes.forEach((node) => {
+          if (node.nodeType === Node.TEXT_NODE) {
+            const trimmed = node.nodeValue.trim();
+            if (translations[trimmed]) node.nodeValue = node.nodeValue.replace(trimmed, translations[trimmed]);
+          } else if (node.nodeType === Node.ELEMENT_NODE) translateTree(node);
+        });
+      }
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+    return () => observer.disconnect();
+  }, [language]);
 
   useEffect(() => {
     const move = (event) => {
@@ -229,7 +352,7 @@ function App() {
   };
 
   return (
-    <div className="site" style={{ "--scroll": scrollProgress }}>
+    <div className="site" key={language} style={{ "--scroll": scrollProgress }}>
       <div className={`cursor ${cursorLabel ? "cursor-active" : ""}`} ref={cursor}>
         {cursorLabel && <span>{cursorLabel}</span>}
       </div>
@@ -245,6 +368,7 @@ function App() {
           <button onClick={() => { track("smartsvar_nav_click", { target: "about" }); scrollTo("about"); }}>About</button>
           <button className="nav-cta" onClick={() => { track("smartsvar_cta_click", { location: "nav" }); scrollTo("contact"); }} {...cursorProps("START PROJECT ↗")}>Start a project <ArrowUpRight size={15}/></button>
         </nav>
+        <button className="language-toggle" onClick={() => setLanguage(language === "no" ? "en" : "no")} aria-label={language === "no" ? "Switch to English" : "Bytt til norsk"}>{language === "no" ? "EN" : "NO"}</button>
         <button className="mobile-menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? "Close menu" : "Open menu"} aria-expanded={menuOpen} aria-controls="mobile-navigation">
           {menuOpen ? <X size={22}/> : <Menu size={22}/>}
         </button>
