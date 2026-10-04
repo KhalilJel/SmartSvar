@@ -1,0 +1,114 @@
+{
+  "timezone": "Europe/Oslo",
+  "cadence": {
+    "linkedin": "1 post every weekday, Monday-Friday",
+    "instagram": "1 post every weekday, Monday-Friday"
+  },
+  "weekStarting": "2026-10-05",
+  "qualityRules": [
+    "Norwegian Bokmål",
+    "Useful, specific advice for Norwegian small businesses",
+    "No fabricated client results, testimonials, statistics or guarantees",
+    "One clear idea per post",
+    "Natural call to action; avoid aggressive sales language",
+    "Instagram posts include suggested visual direction and alt text"
+  ],
+  "posts": [
+    {
+      "id": "li-2026-10-05",
+      "platform": "linkedin",
+      "scheduledAt": "2026-10-05T09:00:00+02:00",
+      "status": "ready_to_publish",
+      "topic": "Nettside og konvertering",
+      "text": "En nettside kan se profesjonell ut uten å skape nye henvendelser.\n\nStart med tre spørsmål:\n• Forstår en ny besøkende hva du tilbyr på få sekunder?\n• Er det tydelig hvorfor kunden skal velge deg?\n• Er neste steg enkelt å finne?\n\nSmå forbedringer i budskap og struktur kan være mer verdifulle enn en full redesign.\n\nHva tror du er den vanligste feilen bedrifter gjør på nettsiden sin?",
+      "link": "https://smartsvar.no/blog/nettside-som-skaper-kunder/"
+    },
+    {
+      "id": "ig-2026-10-05",
+      "platform": "instagram",
+      "scheduledAt": "2026-10-05T11:30:00+02:00",
+      "status": "ready_to_publish",
+      "topic": "3 tegn på en uklar nettside",
+      "text": "3 tegn på at nettsiden din kan være uklar 👇\n\n1. Besøkende må gjette hva du tilbyr.\n2. Det er vanskelig å finne kontaktinformasjon.\n3. Flere knapper konkurrerer om oppmerksomheten.\n\nGjør budskapet tydelig og neste steg enkelt.\n\nLagre innlegget og sjekk nettsiden din senere.",
+      "visual": "Ren karusell med tre slides, mørk marineblå typografi, lys bakgrunn og tydelige nummer.",
+      "altText": "Tre enkle råd for å gjøre en bedrifts nettside tydeligere.",
+      "link": "https://smartsvar.no/blog/nettside-som-skaper-kunder/"
+    },
+    {
+      "id": "li-2026-10-06",
+      "platform": "linkedin",
+      "scheduledAt": "2026-10-06T09:00:00+02:00",
+      "status": "ready_to_publish",
+      "topic": "Tillit på nettsiden",
+      "text": "Tillit på nett bygges ofte gjennom små detaljer.\n\n• Oppdatert kontaktinformasjon\n• Reelle eksempler på arbeid\n• Tydelig beskrivelse av prosessen\n• Et visuelt uttrykk som henger sammen\n\nDu trenger ikke store ord eller overdrevne løfter. Vis konkret hva kunden kan forvente, og gjør det lett å ta kontakt.",
+      "link": "https://smartsvar.no/blog/nettside-som-skaper-kunder/"
+    },
+    {
+      "id": "ig-2026-10-06",
+      "platform": "instagram",
+      "scheduledAt": "2026-10-06T11:30:00+02:00",
+      "status": "ready_to_publish",
+      "topic": "Bygg tillit digitalt",
+      "text": "Vil du bygge mer tillit på nettsiden?\n\n✓ Vis hva du faktisk leverer\n✓ Gjør kontaktinformasjonen enkel å finne\n✓ Forklar hva som skjer etter en henvendelse\n✓ Hold design og språk konsekvent\n\nTillit handler ikke bare om hvordan siden ser ut. Den handler om hvor trygg kunden føler seg.",
+      "visual": "Minimalistisk sjekkliste med fire punkter og god luft.",
+      "altText": "Sjekkliste for å bygge tillit på en bedrifts nettside."
+    },
+    {
+      "id": "li-2026-10-07",
+      "platform": "linkedin",
+      "scheduledAt": "2026-10-07T09:00:00+02:00",
+      "status": "ready_to_publish",
+      "topic": "Mobilopplevelse",
+      "text": "Test nettsiden din på mobilen som om du var en ny kunde.\n\nPrøv å finne en tjeneste, forstå hva den koster eller innebærer, og ta kontakt.\n\nHvis du må zoome, lete etter knapper eller lese lange tekstblokker for å forstå tilbudet, har du funnet noe konkret å forbedre.\n\nStart med én hindring. Du trenger ikke redesigne alt på én gang.",
+      "link": "https://smartsvar.no/blog/nettside-som-skaper-kunder/"
+    },
+    {
+      "id": "ig-2026-10-07",
+      "platform": "instagram",
+      "scheduledAt": "2026-10-07T11:30:00+02:00",
+      "status": "ready_to_publish",
+      "topic": "Mobiltest på 60 sekunder",
+      "text": "En rask mobiltest du kan gjøre på 60 sekunder 📱\n\n1. Åpne nettsiden på telefonen.\n2. Finn hovedtjenesten.\n3. Finn kontaktknappen.\n4. Prøv å sende en henvendelse.\n\nHvor stopper det opp? Det er et godt sted å begynne å forbedre.",
+      "visual": "Mobilmockup med fire enkle trinn, uten kundelogoer eller påståtte resultater.",
+      "altText": "Fire steg for å teste om en nettside fungerer godt på mobil."
+    },
+    {
+      "id": "li-2026-10-08",
+      "platform": "linkedin",
+      "scheduledAt": "2026-10-08T09:00:00+02:00",
+      "status": "ready_to_publish",
+      "topic": "Mål henvendelser, ikke bare trafikk",
+      "text": "Besøkstall forteller bare en del av historien.\n\nFor mange små bedrifter er det viktigere å forstå:\n• Hvor mange tar kontakt?\n• Hvilke sider besøker de først?\n• Hvilke spørsmål går igjen før kjøp?\n\nBruk måling til å finne én forbedring om gangen. Målet er ikke flest mulig klikk, men flere relevante samtaler.",
+      "link": "https://smartsvar.no/blog/nettside-som-skaper-kunder/"
+    },
+    {
+      "id": "ig-2026-10-08",
+      "platform": "instagram",
+      "scheduledAt": "2026-10-08T11:30:00+02:00",
+      "status": "ready_to_publish",
+      "topic": "Besøk eller henvendelser?",
+      "text": "Mange besøk betyr ikke automatisk flere kunder.\n\nSe også på:\n→ Klikk på kontaktknapper\n→ Skjemaer som faktisk sendes inn\n→ Hvilke sider som gir spørsmål\n→ Hvor folk faller fra\n\nMål det som hjelper deg å ta bedre beslutninger.",
+      "visual": "Typografisk grafikk med kontrasten «Besøk» og «Henvendelser», ingen oppdiktede tall.",
+      "altText": "Grafikk om å måle relevante henvendelser, ikke bare trafikk."
+    },
+    {
+      "id": "li-2026-10-09",
+      "platform": "linkedin",
+      "scheduledAt": "2026-10-09T09:00:00+02:00",
+      "status": "ready_to_publish",
+      "topic": "En tydelig digital merkevare",
+      "text": "En tydelig merkevare er mer enn en logo.\n\nNettside, språk, bilder, tilbud og oppfølging bør oppleves som deler av samme bedrift.\n\nEt enkelt designsystem og noen klare språkregler gjør det lettere å være konsekvent, også når flere lager innhold.\n\nHva er viktigst for deg når du vurderer om en bedrift virker profesjonell på nett?",
+      "link": "https://smartsvar.no/blog/nettside-som-skaper-kunder/"
+    },
+    {
+      "id": "ig-2026-10-09",
+      "platform": "instagram",
+      "scheduledAt": "2026-10-09T11:30:00+02:00",
+      "status": "ready_to_publish",
+      "topic": "Merkevare er helheten",
+      "text": "En merkevare er hele opplevelsen.\n\nFarger. Typografi. Bilder. Språk. Nettside. Oppfølging.\n\nNår alt henger sammen, blir bedriften enklere å kjenne igjen og forstå.\n\nLagre innlegget som en liten påminnelse til neste gang du oppdaterer profilen din.",
+      "visual": "Fem rene kort med ordene Farger, Typografi, Bilder, Språk og Opplevelse.",
+      "altText": "Fem elementer som sammen bygger en gjenkjennelig digital merkevare."
+    }
+  ]
+}
