@@ -511,3 +511,5 @@ footer .brand{color:#fff}
 .language-toggle:hover{background:#2F80ED;color:#fff;border-color:#2F80ED}
 .nav nav{padding-right:48px}
 @media(max-width:900px){.language-toggle{right:66px;top:17px}.nav nav{padding-right:0}}
+
+.nav-blog-link,.footer-blog-link{color:inherit;text-decoration:none;font-size:11px;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}.nav-blog-link:hover,.footer-blog-link:hover{color:#2F80ED}.footer-blog-link{margin-right:auto}@media(max-width:900px){.nav-blog-link{display:none}}
