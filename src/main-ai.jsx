@@ -7,23 +7,23 @@ const services = [
   {
     icon: Sparkles,
     name: "AI Consulting",
-    label: "Find where AI creates value",
-    text: "We identify practical opportunities to save time, reduce manual work and improve how your team operates.",
-    points: ["AI opportunity analysis", "Process mapping and prioritisation", "Business case and implementation plan"]
+    label: "Finn hvor AI skaper verdi",
+    text: "Vi finner praktiske muligheter for å spare tid, redusere manuelt arbeid og forbedre hvordan teamet jobber.",
+    points: ["AI mulighetsanalyse", "Prosesskartlegging og prioritering", "Business case og implementeringsplan"]
   },
   {
     icon: Bot,
     name: "AI Agent Development",
-    label: "Build the solution",
-    text: "We design and build AI agents and automations around the work your team actually needs to get done.",
-    points: ["AI agents and assistants", "Workflow automation", "Integrations with your existing tools"]
+    label: "Bygg løsningen",
+    text: "Vi designer og bygger AI-agenter og automatiseringer rundt oppgavene dere faktisk trenger å få gjort.",
+    points: ["AI-agenter og assistenter", "Automatiserte arbeidsflyter", "Integrasjoner med verktøyene dere allerede bruker"]
   },
   {
     icon: Workflow,
     name: "AI Automation",
-    label: "Keep improving",
-    text: "We help you turn proven AI workflows into reliable systems that improve over time.",
-    points: ["Monitoring and optimisation", "New automations", "Ongoing AI advisory"]
+    label: "Forbedre kontinuerlig",
+    text: "Vi hjelper dere å gjøre AI-arbeidsflyter til stabile systemer som blir bedre over tid.",
+    points: ["Oppfølging og optimalisering", "Nye automatiseringer", "Løpende AI-rådgivning"]
   }
 ];
 
@@ -67,7 +67,7 @@ function App() {
         <button className="ai-brand" onClick={() => scrollTo("top")} aria-label="Til toppen">
           SMARTSVAR<span>®</span>
         </button>
-        <div className="ai-nav-center">AI SOLUTIONS / OSLO</div>
+        <div className="ai-nav-center">AI-LØSNINGER / OSLO</div>
         <nav>
           <button onClick={() => scrollTo("services")}>Tjenester</button>
           <button onClick={() => scrollTo("method")}>Metode</button>
@@ -90,7 +90,7 @@ function App() {
 
       <main id="top">
         <section className="ai-hero">
-          <div className="ai-eyebrow">TRUSTED AI ADVISOR / EST. 2026</div>
+          <div className="ai-eyebrow">TRUSTED AI ADVISOR / ETABLERT 2026</div>
           <div className="ai-hero-layout">
             <div>
               <h1>AI SOM<br/><em>FAKTISK</em><br/>SKAPER VERDI.</h1>
@@ -105,19 +105,19 @@ function App() {
               <div className="ai-orbit orbit-b" />
               <div className="ai-orbit orbit-c" />
               <div className="ai-orbit-core"><Sparkles size={28}/></div>
-              <span className="orbit-label label-top">VALUE</span>
-              <span className="orbit-label label-right">AUTOMATION</span>
-              <span className="orbit-label label-bottom">MEASUREMENT</span>
+              <span className="orbit-label label-top">VERDI</span>
+              <span className="orbit-label label-right">AUTOMATISERING</span>
+              <span className="orbit-label label-bottom">MÅLING</span>
               <span className="orbit-label label-left">AI</span>
             </div>
           </div>
           <div className="ai-hero-meta">
-            <span>AI CONSULTING</span><span>AI AGENTS</span><span>AUTOMATION</span><span>OSLO / NORWAY</span>
+            <span>AI RÅDGIVNING</span><span>AI AGENTER</span><span>AUTOMATISERING</span><span>OSLO / NORGE</span>
           </div>
         </section>
 
         <section className="ai-section ai-statement">
-          <div className="ai-section-label">THE PRINCIPLE</div>
+          <div className="ai-section-label">PRINSIPPET</div>
           <div>
             <h2>Ikke mer AI for AI sin skyld.</h2>
             <p>Vi starter med virksomheten, ikke teknologien. Først finner vi problemet. Så regner vi på verdien. Deretter bygger vi det som faktisk er verdt å bygge.</p>
@@ -178,12 +178,12 @@ function App() {
         </section>
 
         <section className="ai-future">
-          <div className="ai-section-label">NEXT</div>
+          <div className="ai-section-label">NESTE</div>
           <div>
             <ShieldCheck size={22}/>
             <h2>Managed AI<br/><em>Cybersecurity.</em></h2>
             <p>En fremtidig tjeneste for virksomheter som trenger mer struktur rundt sikker AI-bruk, risiko og løpende kontroll.</p>
-            <span className="ai-future-note">COMING LATER / SECURITY FIRST</span>
+            <span className="ai-future-note">KOMMER SENERE / SIKKERHET FØRST</span>
           </div>
         </section>
 
@@ -208,7 +208,7 @@ function App() {
       <footer className="ai-footer">
         <span>SMARTSVAR®</span>
         <a href="/blog/">Innsikt ↗</a>
-        <span>OSLO / NORWAY</span>
+        <span>OSLO / NORGE</span>
         <span>© 2026 SMARTSVAR</span>
       </footer>
     </div>
