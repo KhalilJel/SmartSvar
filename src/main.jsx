@@ -422,6 +422,7 @@ function App() {
           <button onClick={() => { track("smartsvar_nav_click", { target: "approach" }); scrollTo("approach"); }}>Approach</button>
           <button onClick={() => { track("smartsvar_nav_click", { target: "lab" }); scrollTo("lab"); }}>Lab</button>
           <button onClick={() => { track("smartsvar_nav_click", { target: "about" }); scrollTo("about"); }}>About</button>
+          <a className="nav-blog-link" href="/blog/">{language === "no" ? "Blogg" : "Blog"}</a>
           <button className="nav-cta" onClick={() => { track("smartsvar_cta_click", { location: "nav" }); scrollTo("contact"); }} {...cursorProps("START PROJECT ↗")}>Start a project <ArrowUpRight size={15}/></button>
         </nav>
         <button className="language-toggle" onClick={() => setLanguage(language === "no" ? "en" : "no")} aria-label={language === "no" ? "Switch to English" : "Bytt til norsk"}>{language === "no" ? "EN" : "NO"}</button>
@@ -639,6 +640,7 @@ function App() {
 
       <footer>
         <div className="brand">SMARTSVAR<span>®</span></div>
+        <a className="footer-blog-link" href="/blog/">{language === "no" ? "Blogg og innsikt ↗" : "Blog & insights ↗"}</a>
         <div>OSLO / WORLDWIDE</div>
         <div>© 2026 SMARTSVAR</div>
       </footer>
