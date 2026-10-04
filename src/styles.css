@@ -506,3 +506,8 @@ footer .brand{color:#fff}
 .project-restaurant .shape-three{border-radius:50%;border-color:rgba(213,166,91,.35)}
 .project-restaurant .art-word{color:#E3B979}
 .case-panel.project-restaurant .case-visual{background:radial-gradient(circle at 60% 35%,#b67e43,#49321f 48%,#171713 80%)}
+
+.language-toggle{position:absolute;right:3vw;top:22px;border:1px solid rgba(11,31,68,.22);padding:8px 10px;font:10px "DM Mono",monospace;letter-spacing:.08em;color:#0B1F44;background:rgba(255,255,255,.75);z-index:60}
+.language-toggle:hover{background:#2F80ED;color:#fff;border-color:#2F80ED}
+.nav nav{padding-right:48px}
+@media(max-width:900px){.language-toggle{right:66px;top:17px}.nav nav{padding-right:0}}
