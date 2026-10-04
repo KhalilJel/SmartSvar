@@ -1,0 +1,27 @@
+{
+  "timezone": "Europe/Oslo",
+  "weekdays": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "targetPostsPerWeek": {
+    "linkedin": 5,
+    "instagram": 5
+  },
+  "scheduleLocalTimes": {
+    "linkedin": "09:00",
+    "instagram": "11:30"
+  },
+  "qualityGate": {
+    "requireNorwegian": true,
+    "blockPlaceholderText": true,
+    "blockUnverifiedClaims": true,
+    "requirePlatformSpecificText": true,
+    "instagramRequireVisualDirectionAndAltText": true
+  },
+  "publishStatus": "content_queue_only",
+  "note": "Actual platform publishing is not enabled until LinkedIn and Instagram publishing credentials/accounts are connected and tested."
+}
