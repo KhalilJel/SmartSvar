@@ -25,7 +25,8 @@
         "linkedin": "Hvis nettsiden får besøk, men få henvendelser, se etter friksjon før du kjøper mer trafikk. Uklart budskap, for mange valg, manglende tillit og lange skjemaer er vanlige hindringer. Små, målrettede forbedringer kan være et bedre første steg enn en full redesign.",
         "instagram": "Får nettsiden din besøk, men få henvendelser? Sjekk om budskapet er tydelig, kontaktknappen er synlig, og mobilopplevelsen er enkel."
       },
-      "status": "queued"
+      "status": "published",
+      "publishedAt": "2026-10-05"
     },
     {
       "slug": "slik-bygger-du-en-gjenkjennelig-merkevare",
