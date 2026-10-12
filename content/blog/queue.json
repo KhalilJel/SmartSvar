@@ -39,7 +39,8 @@
         "linkedin": "En digital merkevare er mer enn en logo. Den bygges gjennom posisjonering, visuelt system, språk og hele kundeopplevelsen. Når nettside, tilbud og sosiale medier forteller den samme historien, blir det enklere for kundene å forstå og huske bedriften.",
         "instagram": "En sterk merkevare handler om mer enn logo og farger. Tenk på budskap, bilder, språk og kundeopplevelse. Alt bør føles som samme bedrift."
       },
-      "status": "queued"
+      "status": "published",
+      "publishedAt": "2026-10-12"
     }
   ]
 }
