@@ -1,0 +1,37 @@
+name: Validate SmartSvar blog changes
+
+on:
+  pull_request:
+    paths:
+      - "public/blog/**"
+      - "public/sitemap.xml"
+      - "content/blog/**"
+      - "scripts/publish-blog.mjs"
+      - ".github/workflows/blog-check.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Check blog generator syntax
+        run: node --check scripts/publish-blog.mjs
+      - name: Build production site
+        run: |
+          npm install
+          npm run build
+      - name: Verify built article and sitemap
+        run: |
+          test -f dist/blog/sokeordsanalyse-sma-bedrifter/index.html
+          test -f dist/blog/index.html
+          test -f dist/sitemap.xml
+          grep -Fq 'https://smartsvar.no/blog/sokeordsanalyse-sma-bedrifter/' dist/sitemap.xml
+          grep -Fq 'rel="canonical" href="https://smartsvar.no/blog/sokeordsanalyse-sma-bedrifter/"' dist/blog/sokeordsanalyse-sma-bedrifter/index.html
+          grep -Fq 'type="application/ld+json"' dist/blog/sokeordsanalyse-sma-bedrifter/index.html
