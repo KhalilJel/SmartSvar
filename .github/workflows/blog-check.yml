@@ -35,3 +35,9 @@ jobs:
           grep -Fq 'https://smartsvar.no/blog/sokeordsanalyse-sma-bedrifter/' dist/sitemap.xml
           grep -Fq 'rel="canonical" href="https://smartsvar.no/blog/sokeordsanalyse-sma-bedrifter/"' dist/blog/sokeordsanalyse-sma-bedrifter/index.html
           grep -Fq 'type="application/ld+json"' dist/blog/sokeordsanalyse-sma-bedrifter/index.html
+          test -f dist/blog/innholdsplan-sosiale-medier-bedrifter/index.html
+          grep -Fq 'https://smartsvar.no/blog/innholdsplan-sosiale-medier-bedrifter/' dist/sitemap.xml
+          grep -Fq 'href="/blog/innholdsplan-sosiale-medier-bedrifter/"' dist/blog/index.html
+          grep -Fq 'rel="canonical" href="https://smartsvar.no/blog/innholdsplan-sosiale-medier-bedrifter/"' dist/blog/innholdsplan-sosiale-medier-bedrifter/index.html
+          grep -Fq 'type="application/ld+json"' dist/blog/innholdsplan-sosiale-medier-bedrifter/index.html
+          node -e "const q=require('./content/blog/queue.json');const a=q.articles.find(x=>x.slug==='innholdsplan-sosiale-medier-bedrifter');if(!a||a.status!=='published'||a.publishedAt!=='2026-11-02')process.exit(1)"
